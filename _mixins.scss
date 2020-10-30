@@ -1,0 +1,35 @@
+@import "_variables.scss";
+
+// Give each value inside the group a nickname
+
+// $name = first column
+// $normal_colour = second column
+// $hover_colour = third column
+.navigation_bar {
+    .button_container {
+        @each $name, $normal_colour, $hover_colour in  $colours {
+            .#{$name} {
+                border-left: solid 1px $navigation-dark-border;
+                border-right: solid 1px $navigation-light-border;
+                a {
+                    i {
+                        color: $normal_colour;
+                    }
+                    color: white;
+                }
+            }
+            .#{$name}:hover {
+                background-color: $normal_colour;
+                i {
+                    color: white;
+                }
+
+                .sub_menu_#{$name} {
+                    display: block;
+                    background-color: $hover_colour;
+                }
+            }
+        }
+    }
+}
+

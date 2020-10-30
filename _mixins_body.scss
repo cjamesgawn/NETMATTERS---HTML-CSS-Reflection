@@ -1,0 +1,84 @@
+@import "_variables.scss";
+
+    .block-container {
+        .row {
+            .col-12 {
+                    @each $name, $normal_colour, $hover_colour in  $colours {
+                        .block-#{$name} {
+                            .icon-circle {
+                            background-color:$normal_colour;
+                            }
+                            a {
+                                background-color:$normal_colour;
+                                color: white;
+                            }
+                        }
+                        .block-#{$name}:hover {
+                            background-color:$normal_colour;
+                            h2 {
+                                color:white;
+                            }
+                            .burger_line {
+                                background-color:white;
+                            }
+                            p {
+                                color:white;
+                            }
+                            .icon-circle {
+                                i {
+                                    color: $normal_colour;
+                                }
+                                
+                                background-color:white;
+                                }
+                            a {
+                                background-color:white;
+                                color: $normal_colour;
+                            }
+                                    
+                        }
+                    }
+            }
+        }
+    }
+
+
+    .latest-articles {
+        .section {
+            .container {
+                .article-list {
+                    .row {
+                        [class*="col-"] {
+                            @each $name, $normal_colour, $hover_colour in $colours {
+                                .item_#{$name} {
+                                    .img-container {
+                                        .category {
+                                            background-color: $normal_colour;
+                                        }
+                                    }
+                                    .block {
+                                        h3 {
+                                            //color: $normal_colour;
+                                            a {
+                                                color: $normal_colour;
+                                            }
+                                        }
+                                        .button {
+                                            background-color: $normal_colour;
+                                            color: white;
+                                            width: 126px;
+                                            font-size: 17px;
+                                            line-height: 35px;
+                                            text-align: center;
+                                            padding: 12px 18px;
+                                            margin-bottom: 20px;
+                                        }
+                                    }
+                                } 
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }

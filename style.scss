@@ -1,0 +1,24 @@
+// Import Variables
+@import 'variables';
+
+// Import Mixins
+@import '_mixins.scss';
+
+// Import Header
+@import 'header';
+
+// Import Body
+@import 'body';
+
+// Import Footer
+@import 'footer';
+
+// Import Font
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap');
+
+// Import Medias
+@import 'medias';
+
+* {
+    font-family: 'Poppins', sans-serif;
+}

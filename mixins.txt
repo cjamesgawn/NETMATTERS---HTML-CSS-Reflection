@@ -1,0 +1,31 @@
+/*body {
+    .block-container {
+        .block-row {
+            .col-12 {
+                .block {
+                    @each $name, $normal_colour, $hover_colour in  $colours {
+                        .#{$name} {
+                            i {
+                                color: white;
+                                background-color: $normal_colour;
+                            }
+                        }
+                        .#{$name}:hover {
+                            background-color: white;
+                            i {
+                                color: $normal_colour;
+                            }
+                            .block {
+                                background-color: $normal_colour;
+                            }
+                            .btn {
+                                background-color: white;
+                            }
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+} */

@@ -1,0 +1,328 @@
+// Import Variables
+@import 'variables';
+
+// Import Mixins
+@import '_mixins.scss';
+
+
+
+body {
+    .banner {
+        margin: 0;
+        padding: 0;
+        display: block;
+        height: 777px; 
+        overflow: hidden;
+        background:url('/Assets/home-3wAI.jpg') no-repeat;
+        background-size:cover;
+        background-position:center center;
+        position:relative;
+
+        &_content {
+            position: absolute;
+            color: white;
+            text-align: center;
+            width:50%;
+            height:275px;
+            top:0;
+            right:0;
+            left:0;
+            bottom:0;
+            margin:auto;
+
+            h1 {
+                font-size: 48px;
+            }
+            p{
+                font-size: 20px;
+                padding-bottom: 20px;
+            }
+            a {
+                font-size: 20px;
+                text-decoration: none;
+                padding: 16px 20px;
+                margin-top: 20px;
+                width: 224px;
+                height: 62px;
+                background-color: #926fb1;
+                border-radius: 3px;
+                color: white;
+                line-height: 50px;
+                &:hover {
+                    background-color: #7e57a0;
+                }
+            }
+        }
+    }
+    .block-container {
+        margin-right: auto;
+        margin-left: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 50px;
+      
+        .row {
+            justify-content: center;
+            display: flex; 
+            flex-wrap: wrap;
+            [class*="col-"] {
+                //margin-bottom: -99999px;
+                //padding-bottom: 99999px;
+                margin-bottom:30px;
+
+            }
+            .block {
+                display: block;
+                border: 1px solid #ccc;
+                width: auto;
+                height: 100%;
+                padding: 30px;
+                padding-bottom: 0px;
+                margin: 30px auto 0 0;
+                text-align: center;
+                border-radius: 3px;
+                box-shadow: 0 3px 35px rgba(0,0,0,.1);
+                .burger_line {
+                    display: block;
+                    height: 3px;
+                    width: 28px;
+                    background-color: black;
+                    margin: 15px auto 10px;
+                    
+                }
+                .icon-circle {
+                    
+                    width: 60px;
+                    height: 60px;
+                    margin: 0 auto 17px auto;
+                    border-radius: 50%;
+                    background-color:  #67809f;
+                    line-height: 60px;
+                    i {
+                        font-size: 16px;
+                        color: white;
+                        
+                    }
+                }
+                .btn-container {
+                    .btn {
+                        
+                        height: auto;
+                        line-height: 35px;
+                        padding: 5px 15px;
+                        font-size: 17px;
+                        border-radius: 3px;
+                    }
+                    a {
+                        transition: 0s;
+                    }
+                }
+                p {
+                    font-size: 13px; 
+                    font-weight: 400;
+                    letter-spacing: .4px;
+                    line-height: 22px;
+                    
+                 }
+                .block-h2 {
+                    h2 {
+                        font-size: 18px;
+                        font-weight: 400;
+                    }
+                    
+                }
+                
+            }
+            
+        }
+    }
+
+    .brand-background-container {
+        .brand-background {
+            background-color: #333645;
+            .container {
+                padding: 50px 15px;
+                margin: 0 auto;
+                .row {
+                    .col-lg-6 {
+                        color: white;
+                        h1 {
+                            font-size: 36px;
+                            margin: -6px 0 28px 0;
+                            text-transform: uppercase;
+                        }
+                        p {
+                            font-size: 16px;
+                            margin: 0 0 25px;
+                        }
+                        .p-bold {
+                            font-weight: bold;
+                        }
+                        a {
+                            text-decoration: none;
+                            color: #333645;
+                            background-color: white;
+                            line-height: 35px;
+                            padding: 11px 15px;
+                            font-size: 17px;
+                            border-radius: 3px;
+                            &:hover {
+                                opacity: 0.92;
+                            }
+                            i {
+                                padding-left:12px;
+                            }
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.latest-articles {
+    .bar {
+        box-shadow: 0 3px 35px rgba(0,0,0,.1);
+        .container {
+            margin: 0 auto;
+            padding: 0 15px;
+            
+            span {
+                .burger_line {
+                    display: block;
+                    height: 5px;
+                    width: 71.81px;
+                    background-color: #333645;
+                    
+                    /*
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    background-color:#333645;
+                    width: 71px;
+                    height:5px;
+                    */
+                }
+                p {
+                    display: block;
+                    color: #333645;
+                    font-size: 20px;
+                    font-weight: 600;
+                    line-height: 24px;
+                    letter-spacing: 0.4px;
+                    padding: 40px 0 20px 0;
+                    
+                }
+            }
+        }
+    }
+    .section {
+        padding: 50px 0 20px;
+        .container {
+            margin: 0 auto;
+            padding: 0 15px;
+            .article-list {
+                overflow: hidden;
+                .row {
+                    margin: 0 -15px;
+                    [class*="col-"] {
+                        .item {
+                            
+                            .img-container {
+                                position: relative;
+                                border: 1px solid #ccc;
+                                border-radius: 3px 3px 0 0;
+                                .category {
+                                    position: absolute;
+                                    top: 10px;
+                                    right: 0;
+                                    color:white;
+                                    font-size: 12px;
+                                    padding: 0 10px;
+                                    line-height: 23px;
+                                    text-transform: uppercase;
+                                    z-index: 1;
+                                    font-weight: 600;
+                                }
+                                img {
+                                    display: block;
+                                    border-radius: 3px 3px 0 0;
+                                    overflow: hidden;
+                                    position: relative;
+                                    width: 100%;
+                                    height: auto;
+                                }
+                            }
+                            .block {
+                                display: block;
+                                border: 1px solid #ccc;
+                                border-top: none;
+                                padding: 30px;
+                                box-shadow: 0 3px 35px rgba(0,0,0,.1);
+                                margin-bottom: 30px;
+                                h3 {
+                                    a {
+                                        font-size: 16px;
+                                        line-height: 24px;
+                                        padding: 0;
+                                        letter-spacing: 0.4px;
+                                        font-weight: 600;
+                                    }
+                                }
+                                p {
+                                    font-size: 13px;
+                                    line-height: 22px;
+                                    letter-spacing: .4px;
+                                    color: #666;
+                                    margin: 0 0 25px;
+                                }
+                                a {
+                        
+                                    height: auto;
+                                    line-height: 35px;
+                                    padding: 5px 15px;
+                                    font-size: 17px;
+                                    border-radius: 3px;
+                                    transition: 0s;
+                                }
+                                .user {
+                                    margin-top: 30px;
+                                    border-top: 1px solid #ccc;
+                                    padding-top: 30px;
+                                    .avatar {
+                                        float: left;
+                                        padding-right: 20px;
+                                        img {
+                                            border-radius: 50%;
+                                        }
+                                    }
+                                    .details {
+                                        padding-left: 20px;
+                                        font-size: 14px;
+                                        line-height: 22px;
+                                        letter-spacing: .4px;
+                                        .text-primary {
+                                            color: #333645!important;
+                                        }
+                                        p {
+                                            color: #666;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+// Import Body Medias
+@import 'body_medias';
+
+@import '_mixins_body.scss';

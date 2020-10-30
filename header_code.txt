@@ -1,0 +1,165 @@
+/*
+.header {
+
+    width: 100%;
+    overflow: auto;
+    box-sizing: border-box;
+
+
+    &_logo {
+
+        display: block;
+        width: 25%;
+        float: left;
+
+        img {
+
+            width: 100%;
+        }
+    }
+
+    &_actions {
+
+        float: right;
+        padding: 7px 0;
+    }
+
+
+}
+
+*/
+
+.header {
+    
+    width: 100%;
+    overflow:auto;
+    padding:14px 0;
+    margin-top:5px;
+    margin-bottom:5px;
+
+    .container {
+
+        display: flex;
+        flex-direction: row;
+    }
+    
+
+
+    &_logo {
+
+        display:block;
+        width:370px;
+        
+        float:left;
+        padding: 22px 20px;
+
+        img {
+
+            width:370px;
+            height:64px;
+
+        }
+    }
+
+    &_buttons {
+
+        width:37%;
+        float:left;
+        padding:22px 20px;
+        
+
+        a {
+
+            color:#ffffff;
+
+            &:hover {
+
+                text-decoration:none;
+
+            }
+
+            &:first-child {
+
+                background:#4183d7;
+                display: inline-block;
+                height: 56px;
+                padding:16px 25px;
+                border-radius: 3px;
+                
+
+            }
+
+            &:nth-child(2) {
+
+                background:#999aa2;
+                display: inline-block;
+                padding:16px 25px;
+                border-radius: 3px;
+
+            }
+
+        }
+
+
+    }
+
+    &_search {
+
+        width: 37%;
+        padding: 22px 20px;
+        display: flex;
+        
+            
+         &-input {
+
+        width: 240px;
+        height: 56px;
+        padding: 5px 15px;
+
+         }
+         
+
+        &-button {
+
+            background:#999aa2;
+            border: 0;
+            height: 56px;
+            width: 63px;
+            float: right;
+
+        }
+    }
+
+    &_menu-button {
+
+        height: 56px;
+        width: 63px;      
+        background: $menu-button;
+        text-align: center;
+        font-size: 12px;
+        padding:10px 10px;
+        margin: 5px 5px;
+        border-radius: 3px;
+        
+        
+        i {
+
+            font-size: 20px;
+
+        }
+
+        a {
+
+            text-decoration: none;
+            color: #ffffff;
+            
+
+        }
+    
+
+    }
+
+}
+
+// Import header medias
+@import 'header_medias';
