@@ -44,11 +44,13 @@
 
     body {
         .banner {
-            height: 835px;
-            &_img {
-                img {
-                    height: 835px;
-                }
+            height: 490px;
+            &_content {
+                text-align: left;
+                right: 5;
+                width: 100%;
+                padding-left: 15px;
+                margin-left: 6px;
             }
         }
         .block-container {

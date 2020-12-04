@@ -188,7 +188,7 @@ body {
             margin: 0 auto;
             padding: 0 15px;
             
-            span {
+            .burger-line {
                 .burger_line {
                     display: block;
                     height: 5px;
@@ -234,6 +234,7 @@ body {
                                 position: relative;
                                 border: 1px solid #ccc;
                                 border-radius: 3px 3px 0 0;
+                                overflow: hidden;
                                 .category {
                                     position: absolute;
                                     top: 10px;
@@ -246,13 +247,25 @@ body {
                                     z-index: 1;
                                     font-weight: 600;
                                 }
-                                img {
+                                .img {
+                                    overflow: hidden;
+                                    
+                                    }
+                                    img{
                                     display: block;
                                     border-radius: 3px 3px 0 0;
-                                    overflow: hidden;
-                                    position: relative;
+                                    //overflow: hidden;
+                                    //position: relative;
                                     width: 100%;
                                     height: auto;
+                                    //transition-duration:200ms;
+                                    //scale:1;
+                                    transition: all 0.5s 0s;
+                                    &:hover {
+                                        transform: scale(1.1);
+                                        transition-duration: 200ms;
+                                        opacity: 75%;
+                                    }
                                 }
                             }
                             .block {
