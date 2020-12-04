@@ -1925,6 +1925,41 @@ $security-primary:#de093f;
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
+  footer .clients .container .list .item .description {
+    display: block;
+    position: absolute;
+    left: -200px;
+    right: -200px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  footer .clients .container .list .item .description .box {
+    background-color: #333645;
+    color: white;
+    padding: 20px;
+    font-size: 18px;
+    max-width: 260px;
+    margin: 0 auto 50px;
+  }
+  footer .clients .container .list .item .description .box h3::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 28px;
+    height: 3px;
+    display: block;
+    background-color: white;
+  }
+  footer .clients .container .list .item .description .box .arrow {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    margin-left: -36px;
+  }
   footer .clients .container .list .item img {
     height: auto;
     width: 100%;
@@ -1942,6 +1977,9 @@ $security-primary:#de093f;
     display: none;
   }
   footer .clients .container .list .item:hover .coloured {
+    display: block;
+  }
+  footer .clients .container .list .item:hover .description {
     display: block;
   }
   footer .accreditations {
@@ -1964,37 +2002,6 @@ $security-primary:#de093f;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-  }
-  footer .accreditations .container .list .item .description {
-    position: absolute;
-    bottom: 100%;
-    left: -200px;
-    right: -200px;
-  }
-  footer .accreditations .container .list .item .description .box {
-    background-color: #333645;
-    color: white;
-    padding: 20px;
-    font-size: 18px;
-    max-width: 260px;
-    margin: 0 auto 50px;
-  }
-  footer .accreditations .container .list .item .description .box h3::after {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    width: 28px;
-    height: 3px;
-    display: block;
-    background-color: white;
-  }
-  footer .accreditations .container .list .item .description .box .arrow {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    margin-left: -36px;
   }
   footer .accreditations .container .list .item img {
     height: auto;

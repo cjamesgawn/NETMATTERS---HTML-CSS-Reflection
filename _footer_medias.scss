@@ -14,48 +14,16 @@ footer {
                 text-align: center;
                 justify-content: space-between;
                 .item {
-                    img  {
-                        height: auto;
-                        width: 100%;
-                        max-width: 100%;
-                        vertical-align: middle;
-                        padding: 0 20px;
-                    }
-                    .greyscale{
-                        display: block;
-                    }
-                    .coloured {
-                        display: none;
-                    }
-                    &:hover {
-                        .greyscale {
-                            display: none;
-                        }
-                        .coloured {
-                            display: block;
-                        }
-                    }
-                }
-            }
-        } 
-    }
-    .accreditations {
-        display: block;
-        width: 100%;
-        .container {
-            padding: 50px 0;
-            width: auto;
-            .list {
-                display: flex;
-                flex-direction: row;
-                text-align: center;
-                justify-content: space-between;
-                .item {
                     .description {
+                        display: block;
                         position: absolute;
-                        bottom: 100%;
+                        //bottom: 100%;
                         left: -200px;
                         right: -200px;
+                        top:0;
+                        right:0;
+                        bottom:0;
+                        left:0;
                         .box{
                             background-color:#333645;
                             color: white;
@@ -84,6 +52,47 @@ footer {
                             }
                         }        
                     }
+                    img  {
+                        height: auto;
+                        width: 100%;
+                        max-width: 100%;
+                        vertical-align: middle;
+                        padding: 0 20px;
+                    }
+                    .greyscale{
+                        display: block;
+                    }
+                    .coloured {
+                        display: none;
+                    }
+                    &:hover {
+                        .greyscale {
+                            display: none;
+                        }
+                        .coloured {
+                            display: block;
+                        }
+                        .description{
+                            display: block;
+                        }
+                    }
+                }
+            }
+        } 
+    }
+    .accreditations {
+        display: block;
+        width: 100%;
+        .container {
+            padding: 50px 0;
+            width: auto;
+            .list {
+                display: flex;
+                flex-direction: row;
+                text-align: center;
+                justify-content: space-between;
+                .item {
+                    
                     img {
                         height:auto;
                         width: 100%;
