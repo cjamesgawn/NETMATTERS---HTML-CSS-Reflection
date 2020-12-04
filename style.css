@@ -1392,10 +1392,18 @@ body .brand-background-container .brand-background .container .row .col-lg-6 a i
 
 @media (min-width: 1200px) {
   body .banner {
-    height: 736px;
+    height: 490px;
   }
-  body .banner_img img {
-    height: 736px;
+  body .banner .banner_content {
+    width: 1200px;
+    margin: auto;
+  }
+  body .banner .banner_content h1 {
+    margin-bottom: 25px;
+  }
+  body .banner .banner_content p {
+    margin: 0 0 35px;
+    padding: 0;
   }
   body .block-container {
     width: 1200px;
