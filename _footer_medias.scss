@@ -14,16 +14,13 @@ footer {
                 text-align: center;
                 justify-content: space-between;
                 .item {
+                    position: relative;
                     .description {
-                        display: block;
+                        display: none;
                         position: absolute;
-                        //bottom: 100%;
+                        bottom: 100%;
                         left: -200px;
                         right: -200px;
-                        top:0;
-                        right:0;
-                        bottom:0;
-                        left:0;
                         .box{
                             background-color:#333645;
                             color: white;
@@ -32,7 +29,13 @@ footer {
                             max-width: 260px;
                             margin: 0 auto 50px;
                             h3 {
-                                &::after{
+                                position: relative;
+                                font-size: 18px;
+                                line-height: 19.8px;
+                                letter-spacing: 0.4px;
+                                padding-bottom: 0px;
+                                margin: 0 0 17px;
+                                /*&:after{
                                     position: absolute;
                                     bottom: 0;
                                     left: 0;
@@ -42,13 +45,66 @@ footer {
                                     height: 3px;
                                     display: block;
                                     background-color: white;
+                                }*/
+                            }
+                            .burger_line {
+                                display: block;
+                                height: 3px;
+                                width: 28px;
+                                background-color: white;
+                                margin: 11px auto;
                                 }
+                            p {
+                                font-size: 13px;
+                                padding: 0;
+                                margin: 0;
+                                line-height: 22px;
+                                letter-spacing: 0.4px;
                             }
                             .arrow {
+                                content:"";
                                 position:absolute;
                                 bottom: 10px;
+                                //top: 100%;
                                 left: 50%;
                                 margin-left: -36px;
+                                width: 72px;
+                                height: 40px;
+                               
+                                
+                                /*width: 120px;
+                                top: 100%;
+                                left: 50%;
+                                margin-left: -60px;*/
+                                &::after {
+                                    /*content:"";
+                                    margin:0 auto;
+                                    margin-left:-5px;
+                                    top:100%;
+                                    left:50%;
+                                    position:absolute;
+                                    border-color: #333645 transparent transparent transparent;
+                                    border-style: solid;
+                                    border-width: 35px 36px 0;
+                                    z-index: 1;*/
+
+                                    content: "";
+                                    margin: auto;
+                                    display: inline-block;
+                                    border-color: #333645 transparent transparent;
+                                    border-style: solid;
+                                    border-width: 35px 36px 0;
+                                    z-index: 1;
+
+                                    /*content: " ";
+                                    position: absolute;
+                                    top: 100%;
+                                    left: 50%;
+                                    margin-left: -36px;
+                                    border-width: 35px 36px 0;
+                                    border-style: solid;
+                                    border-color: black transparent transparent transparent;*/
+                                }
                             }
                         }        
                     }
@@ -66,6 +122,9 @@ footer {
                         display: none;
                     }
                     &:hover {
+                        .description{
+                            display: block;
+                        }
                         .greyscale {
                             display: none;
                         }

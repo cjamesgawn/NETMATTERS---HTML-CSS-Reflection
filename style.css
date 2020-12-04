@@ -1925,15 +1925,15 @@ $security-primary:#de093f;
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
+  footer .clients .container .list .item {
+    position: relative;
+  }
   footer .clients .container .list .item .description {
-    display: block;
+    display: none;
     position: absolute;
+    bottom: 100%;
     left: -200px;
     right: -200px;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
   }
   footer .clients .container .list .item .description .box {
     background-color: #333645;
@@ -1943,22 +1943,78 @@ $security-primary:#de093f;
     max-width: 260px;
     margin: 0 auto 50px;
   }
-  footer .clients .container .list .item .description .box h3::after {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    width: 28px;
-    height: 3px;
+  footer .clients .container .list .item .description .box h3 {
+    position: relative;
+    font-size: 18px;
+    line-height: 19.8px;
+    letter-spacing: 0.4px;
+    padding-bottom: 0px;
+    margin: 0 0 17px;
+    /*&:after{
+                                    position: absolute;
+                                    bottom: 0;
+                                    left: 0;
+                                    right:0;
+                                    margin: auto;
+                                    width: 28px;
+                                    height: 3px;
+                                    display: block;
+                                    background-color: white;
+                                }*/
+  }
+  footer .clients .container .list .item .description .box .burger_line {
     display: block;
+    height: 3px;
+    width: 28px;
     background-color: white;
+    margin: 11px auto;
+  }
+  footer .clients .container .list .item .description .box p {
+    font-size: 13px;
+    padding: 0;
+    margin: 0;
+    line-height: 22px;
+    letter-spacing: 0.4px;
   }
   footer .clients .container .list .item .description .box .arrow {
+    content: "";
     position: absolute;
     bottom: 10px;
     left: 50%;
     margin-left: -36px;
+    width: 72px;
+    height: 40px;
+    /*width: 120px;
+                                top: 100%;
+                                left: 50%;
+                                margin-left: -60px;*/
+  }
+  footer .clients .container .list .item .description .box .arrow::after {
+    /*content:"";
+                                    margin:0 auto;
+                                    margin-left:-5px;
+                                    top:100%;
+                                    left:50%;
+                                    position:absolute;
+                                    border-color: #333645 transparent transparent transparent;
+                                    border-style: solid;
+                                    border-width: 35px 36px 0;
+                                    z-index: 1;*/
+    content: "";
+    margin: auto;
+    display: inline-block;
+    border-color: #333645 transparent transparent;
+    border-style: solid;
+    border-width: 35px 36px 0;
+    z-index: 1;
+    /*content: " ";
+                                    position: absolute;
+                                    top: 100%;
+                                    left: 50%;
+                                    margin-left: -36px;
+                                    border-width: 35px 36px 0;
+                                    border-style: solid;
+                                    border-color: black transparent transparent transparent;*/
   }
   footer .clients .container .list .item img {
     height: auto;
@@ -1972,6 +2028,9 @@ $security-primary:#de093f;
   }
   footer .clients .container .list .item .coloured {
     display: none;
+  }
+  footer .clients .container .list .item:hover .description {
+    display: block;
   }
   footer .clients .container .list .item:hover .greyscale {
     display: none;
