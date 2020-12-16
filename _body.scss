@@ -79,7 +79,15 @@ body {
         padding-bottom: 50px;
         .service-list {
             .row {
+                .col-xl-3 {
+                    a {
+                        min-height: 379px;
+                    }    
+                }
                 [class*='col-'] {
+                    a {
+                        min-height: 290px;
+                    }
                     .block {
                         text-align: center;
                         width: 100%;
@@ -349,7 +357,7 @@ body {
                     margin: 0 -15px;
                     [class*="col-"] {
                         .item {
-                            
+                            min-height: 612px;        
                             .img-container {
                                 position: relative;
                                 border: 1px solid #ccc;
@@ -395,6 +403,7 @@ body {
                                 padding: 30px;
                                 box-shadow: 0 3px 35px rgba(0,0,0,.1);
                                 margin-bottom: 30px;
+                                min-height: 391px;
                                 h3 {
                                     a {
                                         font-size: 16px;

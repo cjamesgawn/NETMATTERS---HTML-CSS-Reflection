@@ -38,6 +38,15 @@
         }
         .section {
             max-width: 750px;
+            .service-list {
+                .row {
+                    .first {
+                        // min-height: 290px;
+                        // max-height: 290px;
+                        // height: 290px;
+                    }
+                }
+            }
         }
     }
 }
@@ -72,6 +81,22 @@
         }
         .section {
             max-width: 750px;
+            .service-list {
+                .row {
+                    .col-xl-3 {
+                        a {
+                            min-height:312px;
+                        }
+                    }
+                    [class*='col-'] {
+                        a {
+                            .p {
+                                min-height: 66px;
+                            }
+                        }
+                    }
+                }
+            }
         }
         .latest-articles {
             .section {
@@ -130,6 +155,15 @@
         }
         .section {
             max-width: 970px;
+            .service-list {
+                .row {
+                    .col-xl-3 {
+                        a {
+                            min-height:290px;
+                        }
+                    }
+                }
+            }
         }   
         .brand-background-container {
             height: 493px;
@@ -187,6 +221,15 @@
         }
         .section {
             max-width:1200px;
+            .service-list {
+                .row {
+                    .col-xl-3 {
+                        a {
+                            min-height:312px;
+                        }
+                    }
+                }
+            }
         }
         .brand-background-container {
             height: 553px;
