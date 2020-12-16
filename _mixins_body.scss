@@ -1,46 +1,97 @@
 @import "_variables.scss";
 
-    .block-container {
+.section {
+    .service-list {
         .row {
-            .col-12 {
+            [class*='col-'] {
                     @each $name, $normal_colour, $hover_colour in  $colours {
                         .block-#{$name} {
-                            .icon-circle {
+                            background-color:#fff;
+                            .icon-container {
                             background-color:$normal_colour;
+                                .icon {
+                                    color: white;
+                                }
                             }
-                            a {
-                                background-color:$normal_colour;
-                                color: white;
+                            .btn-container {
+                                .btn {
+                                    background-color: $normal_colour;
+                                    color: white;
+                                }
                             }
                         }
                         .block-#{$name}:hover {
                             background-color:$normal_colour;
-                            h2 {
+                            .h2 {
+                                color:white;
+                                &::after {
+                                    background-color: white;
+                                }
+                            }
+                            .p {
                                 color:white;
                             }
-                            .burger_line {
-                                background-color:white;
-                            }
-                            p {
-                                color:white;
-                            }
-                            .icon-circle {
-                                i {
+                            .icon-container {
+                                .icon {
                                     color: $normal_colour;
                                 }
-                                
                                 background-color:white;
                                 }
-                            a {
-                                background-color:white;
-                                color: $normal_colour;
+                            .btn-container {
+                                .btn {
+                                    background-color:white;
+                                    color: $normal_colour;
+                                }
                             }
                                     
                         }
                     }
+                }
             }
-        }
-    }
+        }    
+    }    
+
+// .block-container {
+    //     .row {
+    //         .col-12 {
+    //                 @each $name, $normal_colour, $hover_colour in  $colours {
+    //                     .block-#{$name} {
+    //                         .icon-circle {
+    //                         background-color:$normal_colour;
+    //                         }
+    //                         a {
+    //                             background-color:$normal_colour;
+    //                             color: white;
+    //                         }
+    //                     }
+    //                     .block-#{$name}:hover {
+    //                         background-color:$normal_colour;
+    //                         h2 {
+    //                             color:white;
+    //                         }
+    //                         .burger_line {
+    //                             background-color:white;
+    //                         }
+    //                         p {
+    //                             color:white;
+    //                         }
+    //                         .icon-circle {
+    //                             i {
+    //                                 color: $normal_colour;
+    //                             }
+                                
+    //                             background-color:white;
+    //                             }
+    //                         a {
+    //                             background-color:white;
+    //                             color: $normal_colour;
+    //                         }
+                                    
+    //                     }
+    //                 }
+    //         }
+    //     }
+    // }
 
 
     .latest-articles {

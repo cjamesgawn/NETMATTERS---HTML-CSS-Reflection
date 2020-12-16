@@ -1,323 +1,423 @@
-
-
-@media (min-width:750px) {
-
-    header {
-        height: 110px;
-        .container {
-            height: 70px;
-            width: 750px;
-            .header_box {
-                padding: 0;
-                margin: 0 -15px;
-                height: 70px;
-                width: 750px;
-
-                .actions_container {
-
-                    .actions {
-                        .header_search {
-                            display: block;
-                            margin-right: 20px;
-
-                            form {
-
-                                display: flex;
-
-                                input {
-                                    display: block;
-                                    height: 56px;
-                                    width: 174px;
-                                    padding: 5px 15px;
-                                    border-radius: 3px 0 0 3px;
-                                    border: solid 1px grey;
-                                    outline: none;
-                                }
-                                button {
-                                    display: block;
-                                    background-color: #999aa2;
-                                    border-radius: 0 3px 3px 0;
-                                    height: 56px;
-                                    width: 63px;
-                                    text-align: center;
-                                    color: white;
-                                    border: none;
+@media (max-width:414px) {
+    body {
+        .header {
+            header {
+                .inner {
+                    .container {
+                        .row {
+                            .logo-box {
+                                padding: 15px 0;
+                            }
+                            .mobile-container {
+                                .mobile {
                                     i {
-                                        font-size: 23px;
-                                        width: 43px;
-                                        height: 56px;
-                                        line-height: 44px;
+                                        font-size: 24px;
                                     }
                                 }
                             }
                         }
-                        .header_phone_button {
-                            display: none;
-                        }
                     }
                 }
-            }
-
-            .mobile_search_bar {
-                display: none;
             }
         }
     }
 }
 
-@media (min-width:975px) {
 
-    header {
-        height: 210px;
-        .container {
-            width: 970px;
-            margin: 0 auto 20px;
-            .header_box {
-                width: 970px;
 
-                .header_logo {
-                    //border: solid orange 1px;
-                    height: 65px;
-                    padding: 0 15px;
-                    img {
-                        width:364px;
-                    }
-                }
-
-                .actions_container {
-                    //border: solid blue 1px;
-                    .actions {
-                        //border: solid magenta 1px;
-                        .support_button,
-                        .contact_button {
-                            display: block;
-                            margin-right: 20px;
-                            width: 143px;
-                            color: white;
-                            border-radius: 3px;
-                            text-align: center;
-                            line-height: 56px;
-                            font-size: 18px;
-                            i {
-                                font-size: 23px;
-                                margin-right: 10px;
-                                line-height: 30px;
-                            }
-                            &:hover {
-                                text-decoration: none;
-                            }
-                        
-                        }
-
-                        .support_button {
-                            //background color
-                            background-color: #4183d7;
-                            &:hover {
-                                background-color: #2a6ecd;
-                            }
-                        }
-
-                        .contact_button {
-                            width: 151px;
-                            background-color: #999aa2;
-                            &:hover {
-                                background-color: #84858f;
-                            }
-                        }
-
-                        .header_search {
-                            form {
-                                input {
-                                    display: none;
+@media (max-width:768px) {
+    
+    body {
+        .header {
+            header {
+                .inner {
+                    .container {
+                        max-width: 750px;
+                        margin: 0;
+                        .row {
+                            margin: 0;
+                            .logo-box {
+                                width: 70%;
+                                .logo-container {
+                                    .logo {
+        
+                                    }
                                 }
-                                button {
-                                    border-radius: 3px;
+                            }
+                            .mobile-container {
+                                display: table-cell;
+                                width: 10%;
+                                float:right;
+                                text-align: center;
+                                .mobile {
+                                    font-size:32px;
+                                    margin-left: 15px;
+                                    line-height: 70px;
+                                }
+                            }
+                            .actions-container {
+                                width: 10%;
+                                padding: 0;
+                                float: right;
+                                .actions {
+                                    .btn_support {
+                                        display: none;
+                                    }
+                                    .btn_contact {
+                                        display: none;
+                                    }
+                                    .search-form-wrapper--tablet {
+                                        display: none;
+                                        .search-form {
+                                            .form_search-bar {
+                                            }
+                                            .form_search-submit {
+                                                .form_search-submit-icon {
+    
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .btn-hamburger {
+                                        float: right;
+                                        .hamburger-box {
+                                            .hamburger-inner {
+        
+                                            }
+                                        }
+                                        .title {
+        
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .search-form-wrapper--mobile {
+                            display: block;
+                            .search-form {
+                                margin-top: 11px;
+                                position: relative;
+                                .form_long-search-bar {
+                                    display: inline-block;
+                                    background-color: rgba(0,0,0,.1);
+                                    outline: 1px solid hsla(0,0%,100%,.2);
+                                    border: 2px solid rgba(0,0,0,.1);
+                                    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+                                    transition: none;
+                                    width: 100%;
+                                    padding-right: 40px;
+                                    height: 47px;
+                                    padding: 5px 15px;
+                                    border-radius: 2px;
+                                }
+                                .form_long-search-submit {
+                                    background: none;
+                                    border: none;
+                                    color: #333645;
+                                    position: absolute;
+                                    right: 5px;
+                                    line-height: 47px;
+                                    font-size: 20px;
+                                    outline: none;
+                                    .form_long-search-submit-icon {
+                                        
+                                    }
                                 }
                             }
                         }
                     }
                 }
             }
-            
-            
-        }
-        .navigation_bar {
-            display: block;
-            width: 100%;
-            background-color: $navigation-bar;
-            //justify-content: center;
-
-            .button_container {
-                margin: 0 auto;
-                display: flex;
-                width: 926px;
-                justify-content: center;
-                border-left: solid 1px $navigation-light-border;
-                border-right: solid 1px $navigation-dark-border;
-                div { // main button div
-                    text-align: center;
-                    width: 154px;
-                    height: 99px;
-                    //padding: 19px 0 18px;
-
-                
-                    /*
-                    .web_design:hover {
-                            .web_menu {
-                                display: flex;
-                                a {
-                                    display: inline-block;
-                                }
-                            } 
-                    }
-                    */
-                    a {
-                        color: white;
-                        padding: 19px 0 18px;
-                        width: 100%;
-                        height: 100%;
-                        display: inline-block;
-                        &:hover {
-                            text-decoration: none;
-                        }
-                    }
-
-                    div[class*=sub_menu] {
-                        // flex box this
-                        display: none;
-                        position: absolute;
-                        left: 0;
-                        z-index:9999;
-                        right: 0;
-                        //border: 1px solid red;
-                        width: 100%;
-                        height: 45px;
-                        p{
-                            color: white;
-                            line-height: 45px;
-                        }
-                        div {
-                            display: flex;
-                            flex-direction: row;
-                            justify-content: space-between;
-                            width: 926px;
+            .main-navigation {
+                display: none;
+                .container {
+                    width: 750px;
+                    max-width: 750px;
+                    ul {
+                        li {
                             
-                            margin: 0 auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
-                            a {
-                                //color: red;
-                                font-size: 13px;
-                                //border: solid 1px red;
-                                width: auto;
-                                // flex items 
-                                line-height: 45px;
-                                padding: 0;
-                                margin: 0;
+@media (min-width:768px) {
+
+body {
+    .header {
+        header {
+            .inner {
+                .container {
+                    width: 750px;
+                    max-width: 750px;
+                    .row {
+                        .logo-box {
+                            .logo-container {
+                                .logo {
+    
+                                }
+                            }
+                        }
+                        .mobile-container {
+                            display: none;
+                            .mobile {
     
                             }
                         }
+                        .actions-container {
+                            .actions {
+                                .btn_support {
+                                    display: none;
+                                }
+                                .btn_contact {
+                                    display: none;
+                                }
+                                .search-form-wrapper--tablet {
+                                    .search-form {
+                                        .form_search-bar {
+                                            width: 174px;
+                                        }
+                                        .form_search-submit {
+                                            .form_search-submit-icon {
 
+                                            }
+                                        }
+                                    }
+                                }
+                                .btn-hamburger {
+                                    .hamburger-box {
+                                        .hamburger-inner {
+    
+                                        }
+                                    }
+                                    .title {
+    
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .search-form-wrapper--mobile {
+                        .search-form {
+                            .form_long-search-bar {
+    
+                            }
+                            .form_long-search-submit {
+                                .form_long-search-submit-icon {
+    
+                                }
+                            }
+                        }
                     }
                 }
-                /*div:nth-child(2) {
-                    border: none;
-                }*/
             }
-
-
         }
-
-        .button_menu {
+        .main-navigation {
             display: none;
-            
+            .container {
+                width: 750px;
+                max-width: 750px;
+                ul {
+                    li {
+                        
+                    }
+                }
+            }
         }
-        
-        
-        /* border comments
-        // navigation bar 
-
-        // 6 div elements with inline-blcok
-
-        // navigation list, dark left border, light right border
-        // [ = dark      ] = light
-        //  [         []         []       []          []        []       []    ]
-        // for each li give light and dark side border
-        */
     }
-}  
+}
+
+
+
+
+
+
+
+
+@media (min-width:992px) {
+
+body {
+    .header {
+        header {
+            .inner {
+                .container {
+                    width: 970px;
+                    max-width: 970px;
+                    .row {
+                        .logo-box {
+                            .logo-container {
+                                .logo {
+    
+                                }
+                            }
+                        }
+                        .mobile-container {
+                            display: none;
+                            .mobile {
+    
+                            }
+                        }
+                        .actions-container {
+                            .actions {
+                                .btn_support {
+                                    display: block;
+                                }
+                                .btn_contact {
+                                    display: block;
+                                }
+                                .search-form-wrapper--tablet {
+                                    .search-form {
+                                        .form_search-bar {
+                                            display: none;
+                                        }
+                                        .form_search-submit {
+                                            border-radius: 3px;
+                                            margin: 0;
+                                            .form_search-submit-icon {
+
+                                            }
+                                        }
+                                    }
+                                }
+                                .btn-hamburger {
+                                    .hamburger-box {
+                                        .hamburger-inner {
+    
+                                        }
+                                    }
+                                    .title {
+    
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .search-form-wrapper--mobile {
+                        .search-form {
+                            .form_long-search-bar {
+    
+                            }
+                            .form_long-search-submit {
+                                .form_long-search-submit-icon {
+    
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .main-navigation {
+            display: block;
+            .container {
+                width: 970px;
+                max-width: 970px;
+                ul {
+                    li {
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+
 
 @media (min-width:1260px) {
 
-    header {
-        //border: solid red 1px;
-        .container {
-            width: 1260px;
-            //border: solid green 1px;
-            .header_box {
-                width: 1260px;
 
-                .header_logo {
-                    //border: solid 1px red;
-                    width: 400px;
-                    margin: 0 0;
-                    padding: 0;
-                    img {
-                        width: 370px;
-                        padding: 0;
-                        margin: 0;
-                    }
-                }
-                .actions_container {
-                    width: 800px;
-                    padding: 0 15px;
-                    margin: 0;
-                    .actions{ 
-                        width: 770px;
-                        justify-content: end;
-                        .header_search {
-                            form {
-                                input {
-                                    display: block;
-                                    width: 240px;
-                                    
+body {
+    .header {
+        header {
+            .inner {
+                .container {
+                    width: 1200px;
+                    max-width: 1200px;
+                    .row {
+                        .logo-box {
+                            .logo-container {
+                                .logo {
+    
                                 }
-                                button {
-                                    border-radius:0 3px 3px 0;
-
-                                }
+                            }
+                        }
+                        .mobile-container {
+                            display: none;
+                            .mobile {
     
                             }
-    
                         }
+                        .actions-container {
+                            .actions {
+                                // .header-btn {
+                                //     display: inline-block!important;
+                                // }
+                                .btn_support {
+                                    display: block;
+                                }
+                                .btn_contact {
     
+                                }
+                                .search-form-wrapper--tablet {
+                                    
+                                    .search-form {
+                                        .form_search-bar {
+                                            display: inline-block;
+                                            width: 240px;
+                                        }
+                                        .form_search-submit {
+                                            border-radius: 0 3px 3px 0;
+                                            margin-left: -4px;
+                                            .form_search-submit-icon {
+
+                                            }
+                                        }
+                                    }
+                                }
+                                .btn-hamburger {
+                                    .hamburger-box {
+                                        .hamburger-inner {
+    
+                                        }
+                                    }
+                                    .title {
+    
+                                    }
+                                }
+                            }
+                        }
                     }
+                    .search-form-wrapper--mobile {
+                        .search-form {
+                            .form_long-search-bar {
     
+                            }
+                            .form_long-search-submit {
+                                .form_long-search-submit-icon {
+    
+                                }
+                            }
+                        }
+                    }
                 }
             }
-
-            
-
-
         }
-        .navigation_bar {
-            .button_container {
-            width: 1154px;
-
-                div {
-                    width: 192px;
-                    div[class*=sub_menu] {
-                        div {
-                            width: 1140px;
-                            a {
-                                font-size: 16px;
-                                
-                            }
-                        }
+        .main-navigation {
+            .container {
+                width: 1200px;
+                max-width: 1200px;
+                ul {
+                    li {
                         
                     }
                 }
             }
         }
     }
-
+}
+}
+}
 }
