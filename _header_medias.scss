@@ -1,17 +1,67 @@
-@media (max-width:414px) {
+@media (min-width:768px) {
+
     body {
         .header {
             header {
                 .inner {
                     .container {
+                        width: 750px;
+                        max-width: 750px;
                         .row {
                             .logo-box {
-                                padding: 15px 0;
+                                .logo-container {
+                                    .logo {
+        
+                                    }
+                                }
                             }
                             .mobile-container {
+                                display: none;
                                 .mobile {
-                                    i {
-                                        font-size: 24px;
+        
+                                }
+                            }
+                            .actions-container {
+                                .actions {
+                                    .btn_support {
+                                        display: none;
+                                    }
+                                    .btn_contact {
+                                        display: none;
+                                    }
+                                    .search-form-wrapper--tablet {
+                                        .search-form {
+                                            .form_search-bar {
+                                                width: 174px;
+                                            }
+                                            .form_search-submit {
+                                                .form_search-submit-icon {
+    
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .btn-hamburger {
+                                        .hamburger-box {
+                                            .hamburger-inner {
+        
+                                            }
+                                        }
+                                        .title {
+        
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .search-form-wrapper--mobile {
+                            .search-form {
+                                .form_long-search-bar {
+        
+                                }
+                                .form_long-search-submit {
+                                    .form_long-search-submit-icon {
+        
                                     }
                                 }
                             }
@@ -19,9 +69,214 @@
                     }
                 }
             }
+            .main-navigation {
+                display: none;
+                .container {
+                    width: 750px;
+                    max-width: 750px;
+                    ul {
+                        li {
+                            
+                        }
+                    }
+                }
+            }
         }
     }
-}
+    
+    
+    
+    
+    
+    
+    
+    
+    @media (min-width:992px) {
+    
+    body {
+        .header {
+            header {
+                .inner {
+                    .container {
+                        width: 970px;
+                        max-width: 970px;
+                        .row {
+                            .logo-box {
+                                .logo-container {
+                                    .logo {
+        
+                                    }
+                                }
+                            }
+                            .mobile-container {
+                                display: none;
+                                .mobile {
+        
+                                }
+                            }
+                            .actions-container {
+                                .actions {
+                                    .btn_support {
+                                        display: block;
+                                    }
+                                    .btn_contact {
+                                        display: block;
+                                    }
+                                    .search-form-wrapper--tablet {
+                                        .search-form {
+                                            .form_search-bar {
+                                                display: none;
+                                            }
+                                            .form_search-submit {
+                                                border-radius: 3px;
+                                                margin: 0;
+                                                .form_search-submit-icon {
+    
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .btn-hamburger {
+                                        .hamburger-box {
+                                            .hamburger-inner {
+        
+                                            }
+                                        }
+                                        .title {
+        
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .search-form-wrapper--mobile {
+                            .search-form {
+                                .form_long-search-bar {
+        
+                                }
+                                .form_long-search-submit {
+                                    .form_long-search-submit-icon {
+        
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .main-navigation {
+                display: block;
+                .container {
+                    width: 970px;
+                    max-width: 970px;
+                    ul {
+                        li {
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    
+    @media (min-width:1260px) {
+    
+    
+    body {
+        .header {
+            header {
+                .inner {
+                    .container {
+                        width: 1200px;
+                        max-width: 1200px;
+                        .row {
+                            .logo-box {
+                                .logo-container {
+                                    .logo {
+        
+                                    }
+                                }
+                            }
+                            .mobile-container {
+                                display: none;
+                                .mobile {
+        
+                                }
+                            }
+                            .actions-container {
+                                .actions {
+                                    // .header-btn {
+                                    //     display: inline-block!important;
+                                    // }
+                                    .btn_support {
+                                        display: block;
+                                    }
+                                    .btn_contact {
+        
+                                    }
+                                    .search-form-wrapper--tablet {
+                                        
+                                        .search-form {
+                                            .form_search-bar {
+                                                display: inline-block;
+                                                width: 240px;
+                                            }
+                                            .form_search-submit {
+                                                border-radius: 0 3px 3px 0;
+                                                margin-left: -4px;
+                                                .form_search-submit-icon {
+    
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .btn-hamburger {
+                                        .hamburger-box {
+                                            .hamburger-inner {
+        
+                                            }
+                                        }
+                                        .title {
+        
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .search-form-wrapper--mobile {
+                            .search-form {
+                                .form_long-search-bar {
+        
+                                }
+                                .form_long-search-submit {
+                                    .form_long-search-submit-icon {
+        
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .main-navigation {
+                .container {
+                    width: 1200px;
+                    max-width: 1200px;
+                    ul {
+                        li {
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+    }
+    }
+    }
+
+
 
 
 
@@ -144,70 +399,21 @@
     }
 }
 
-@media (min-width:768px) {
-
-body {
-    .header {
-        header {
-            .inner {
-                .container {
-                    width: 750px;
-                    max-width: 750px;
-                    .row {
-                        .logo-box {
-                            .logo-container {
-                                .logo {
-    
-                                }
+@media (max-width:414px) {
+    body {
+        .header {
+            header {
+                .inner {
+                    .container {
+                        .row {
+                            .logo-box {
+                                padding: 15px 0;
                             }
-                        }
-                        .mobile-container {
-                            display: none;
-                            .mobile {
-    
-                            }
-                        }
-                        .actions-container {
-                            .actions {
-                                .btn_support {
-                                    display: none;
-                                }
-                                .btn_contact {
-                                    display: none;
-                                }
-                                .search-form-wrapper--tablet {
-                                    .search-form {
-                                        .form_search-bar {
-                                            width: 174px;
-                                        }
-                                        .form_search-submit {
-                                            .form_search-submit-icon {
-
-                                            }
-                                        }
+                            .mobile-container {
+                                .mobile {
+                                    i {
+                                        font-size: 24px;
                                     }
-                                }
-                                .btn-hamburger {
-                                    .hamburger-box {
-                                        .hamburger-inner {
-    
-                                        }
-                                    }
-                                    .title {
-    
-                                    }
-                                }
-                            }
-                        }
-                    }
-                    .search-form-wrapper--mobile {
-                        .search-form {
-                            .form_long-search-bar {
-    
-                            }
-                            .form_long-search-submit {
-                                .form_long-search-submit-icon {
-    
                                 }
                             }
                         }
@@ -215,14 +421,34 @@ body {
                 }
             }
         }
-        .main-navigation {
-            display: none;
-            .container {
-                width: 750px;
-                max-width: 750px;
-                ul {
-                    li {
-                        
+    }
+}
+
+@media (max-width:320px) {
+    body {
+        .header {
+            header {
+                .inner {
+                    .container {
+                        .row {
+                            justify-content: space-between;
+                            .logo-box {
+                                max-width: 50%;
+                                padding: 22px 0;
+                                .logo-container {
+                                    .logo {
+                                        vertical-align: middle;
+                                    }
+                                }
+                            }
+                            .mobile-container {
+                                //float: left;
+                            }
+                            .actions-container {
+                                //float: left;
+                                margin-left: 40px;
+                            }
+                        }
                     }
                 }
             }
@@ -231,193 +457,3 @@ body {
 }
 
 
-
-
-
-
-
-
-@media (min-width:992px) {
-
-body {
-    .header {
-        header {
-            .inner {
-                .container {
-                    width: 970px;
-                    max-width: 970px;
-                    .row {
-                        .logo-box {
-                            .logo-container {
-                                .logo {
-    
-                                }
-                            }
-                        }
-                        .mobile-container {
-                            display: none;
-                            .mobile {
-    
-                            }
-                        }
-                        .actions-container {
-                            .actions {
-                                .btn_support {
-                                    display: block;
-                                }
-                                .btn_contact {
-                                    display: block;
-                                }
-                                .search-form-wrapper--tablet {
-                                    .search-form {
-                                        .form_search-bar {
-                                            display: none;
-                                        }
-                                        .form_search-submit {
-                                            border-radius: 3px;
-                                            margin: 0;
-                                            .form_search-submit-icon {
-
-                                            }
-                                        }
-                                    }
-                                }
-                                .btn-hamburger {
-                                    .hamburger-box {
-                                        .hamburger-inner {
-    
-                                        }
-                                    }
-                                    .title {
-    
-                                    }
-                                }
-                            }
-                        }
-                    }
-                    .search-form-wrapper--mobile {
-                        .search-form {
-                            .form_long-search-bar {
-    
-                            }
-                            .form_long-search-submit {
-                                .form_long-search-submit-icon {
-    
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-        .main-navigation {
-            display: block;
-            .container {
-                width: 970px;
-                max-width: 970px;
-                ul {
-                    li {
-                        
-                    }
-                }
-            }
-        }
-    }
-}
-
-
-@media (min-width:1260px) {
-
-
-body {
-    .header {
-        header {
-            .inner {
-                .container {
-                    width: 1200px;
-                    max-width: 1200px;
-                    .row {
-                        .logo-box {
-                            .logo-container {
-                                .logo {
-    
-                                }
-                            }
-                        }
-                        .mobile-container {
-                            display: none;
-                            .mobile {
-    
-                            }
-                        }
-                        .actions-container {
-                            .actions {
-                                // .header-btn {
-                                //     display: inline-block!important;
-                                // }
-                                .btn_support {
-                                    display: block;
-                                }
-                                .btn_contact {
-    
-                                }
-                                .search-form-wrapper--tablet {
-                                    
-                                    .search-form {
-                                        .form_search-bar {
-                                            display: inline-block;
-                                            width: 240px;
-                                        }
-                                        .form_search-submit {
-                                            border-radius: 0 3px 3px 0;
-                                            margin-left: -4px;
-                                            .form_search-submit-icon {
-
-                                            }
-                                        }
-                                    }
-                                }
-                                .btn-hamburger {
-                                    .hamburger-box {
-                                        .hamburger-inner {
-    
-                                        }
-                                    }
-                                    .title {
-    
-                                    }
-                                }
-                            }
-                        }
-                    }
-                    .search-form-wrapper--mobile {
-                        .search-form {
-                            .form_long-search-bar {
-    
-                            }
-                            .form_long-search-submit {
-                                .form_long-search-submit-icon {
-    
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-        .main-navigation {
-            .container {
-                width: 1200px;
-                max-width: 1200px;
-                ul {
-                    li {
-                        
-                    }
-                }
-            }
-        }
-    }
-}
-}
-}
-}
