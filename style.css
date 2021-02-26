@@ -349,6 +349,91 @@ body .header header .inner .container .search-form-wrapper--mobile {
   display: none;
 }
 
+body .header header .sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 9999;
+  height: 100%;
+  background-color: #333645;
+  width: 275px;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+body .header header .sidebar .main {
+  padding: 21px;
+}
+
+body .header header .sidebar .main ul {
+  margin: -20px 0 0;
+  list-style: none;
+  padding: 0;
+}
+
+body .header header .sidebar .main ul li {
+  padding: 20px 0 0;
+  list-style: none;
+}
+
+body .header header .sidebar .main ul li a {
+  font-size: 18px;
+  padding: 19px 0 18px;
+  border-radius: 3px;
+  outline: 1px solid rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+body .header header .sidebar .main ul li a small {
+  font-size: 10px;
+}
+
+body .header header .sidebar .main ul li ul {
+  margin-top: 20px;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+body .header header .sidebar .main ul li ul li {
+  padding: 0;
+  margin: 0;
+  border: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.45);
+}
+
+body .header header .sidebar .main ul li ul li:first-child {
+  border-top: none;
+}
+
+body .header header .sidebar .main ul li ul li:first-child a {
+  border-top: none;
+}
+
+body .header header .sidebar .main ul li ul li a {
+  display: block;
+  background-color: rgba(0, 0, 0, 0.25);
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  outline: none;
+}
+
+body .header header .sidebar .main ul li.web span {
+  color: #926fb1;
+}
+
 body .header .main-navigation {
   background-color: #333645;
 }
@@ -469,14 +554,6 @@ body .header .main-navigation .container ul li .menu li:nth-child(1) {
 body .header .main-navigation .container ul li .menu li:nth-child(6) a::after {
   padding: 0;
   content: "";
-}
-
-body .header .main-navigation .sidebar {
-  position: fixed;
-  top: 0;
-  right: 0;
-  z-index: 9999;
-  height: 100%;
 }
 
 /*
