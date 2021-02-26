@@ -189,6 +189,17 @@
                 }
             }
         }
+        .sidebar {
+            width: 350px;
+            .main {
+                display: none;
+            }
+            .sidebar-menu {
+                .support {
+                    display: block;
+                }
+            }
+        }
     }
 
 }  
@@ -276,152 +287,3 @@
     }
 }
 
-
-// @media (max-width:750px) {
-    
-// }
-
-// @media (min-width:750px) {
-
-//     body {
-//         .banner {
-//             &_img {
-//                 // img {
-//                 //     height: 777px;
-//                 // }
-//             }
-//             /*&_content {
-
-//             }*/
-//         }
-//         .block-container{
-//             width: 750px;
-//         }
-//         .latest-articles {
-//             .section {
-//                 .container {
-//                     .article-list {
-//                         .row {
-
-//                                 .col-xl-4 {
-
-//                                         &:nth-child(3n) {
-
-//                                             display:none;
-
-//                                         }
-
-//                                 }
-
-
-//                         }
-//                     }
-//                 }
-//             }
-//         }
-//     }
-   
-// }
-
-// @media (min-width:975px) {
-
-//     body {
-//         .banner {
-//             height: 490px;
-//             &_content {
-//                 text-align: left;
-//                 right: 5;
-//                 width: 100%;
-//                 padding-left: 15px;
-//                 margin-left: 6px;
-//             }
-//         }
-//         .block-container {
-//             width: 970px;
-//             .row {
-//                 [class*='col-'] {
-//                     //height: 66px;
-//                 }
-//             }
-//         }
-//         .brand-background-container {
-//             height: 493px;
-//             .brand-background {
-//                 background-image:url("/assets/branded.png");
-//                 background-repeat: no-repeat;
-//                 background-position: center center;
-//                 //background-attachment: fixed;
-//                 background-size: cover;
-//                 height: 100%;
-//                 .container {
-//                     height: 100%;
-//                     .row {
-//                         height: 100%;
-//                         [class*='col-'] {
-//                             height: 100%;
-//                             //height: 399px;
-//                             //flex:unset;
-//                             //max-width: 100%;
-//                             display: block;
-//                         }
-//                     }
-//                 }
-//             }
-//         }
-//     }
-
-// }  
-
-// @media (min-width:1200px) {
-
-//     body {
-//         .banner {
-//             .banner_content {
-//                 h1 {
-//                     margin-bottom: 25px;
-//                 }
-//                 p {
-//                     margin: 0 0 35px;
-//                     padding: 0;
-//                 }
-//                 width: 1200px;
-//                 margin:auto;
-//             }
-//             height: auto;
-//             min-height: 490px;
-            
-//         }
-//         .block-container {
-//             width: 1200px;
-//         }
-//         .brand-background-container {
-//             height: 553px;
-//             height: 100%;
-//             .brand-background {
-
-//             }
-//         }
-//         .latest-articles {
-//             .section {
-//                 .container {
-//                     .article-list {
-//                         .row {
-
-//                                 .col-xl-4 {
-
-//                                         &:nth-child(3n) {
-
-//                                             display:block;
-
-//                                         }
-
-//                                 }
-
-
-//                         }
-//                     }
-//                 }
-//             }
-//         }
-//     }
-// }

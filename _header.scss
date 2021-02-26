@@ -183,74 +183,7 @@ body {
                     }
                 }
             }
-            .sidebar {
-                position: fixed;
-                top: 0;
-                right: 0;
-                z-index: 9999;
-                height: 100%;
-                background-color:#333645;
-                width: 275px;
-                overflow: auto;
-                -webkit-overflow-scrolling: touch;
-                .main {
-                    padding: 21px;
-                    ul {
-                        margin: -20px 0 0;
-                        list-style: none;
-                        padding: 0;
-                        li {
-                            padding: 20px 0 0;
-                            list-style: none;
-                            a {
-                                font-size: 18px;
-                                padding: 19px 0 18px;
-                                border-radius: 3px;
-                                outline: 1px solid rgba(0,0,0,.25);
-                                border: 1px solid hsla(0,0%,100%,.1);
-                                display: flex;
-                                flex-direction: column;
-                                color: white;
-                                text-align: center;
-                                text-transform: uppercase;
-                                text-decoration: none;
-                                small {
-                                    font-size: 10px;
-                                }
-                            }
-                            ul {
-                                margin-top: 20px;
-                                border-radius: 3px;
-                                overflow: hidden;
-                                li {
-                                    padding: 0;
-                                    margin: 0;
-                                    border: none;
-                                    border-top: 1px solid rgba(0,0,0,.45);
-                                    &:first-child {
-                                        border-top: none;
-                                        a {
-                                            border-top: none;
-                                        }
-                                    }
-                                    a {
-                                        display: block;
-                                        background-color: rgba(0,0,0,.25);
-                                        padding: 10px;
-                                        font-size: 16px;
-                                        border: none;
-                                        border-top: 1px solid hsla(0,0%,100%,.05);      
-                                        outline: none;
-                                    } 
-                                }
-                            }
-                        }
-                        li.web span {
-                            color: #926fb1;
-                        }
-                    }
-                }
-            }
+            
         }
         .main-navigation {
             background-color: #333645;

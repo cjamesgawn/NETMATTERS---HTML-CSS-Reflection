@@ -349,91 +349,6 @@ body .header header .inner .container .search-form-wrapper--mobile {
   display: none;
 }
 
-body .header header .sidebar {
-  position: fixed;
-  top: 0;
-  right: 0;
-  z-index: 9999;
-  height: 100%;
-  background-color: #333645;
-  width: 275px;
-  overflow: auto;
-  -webkit-overflow-scrolling: touch;
-}
-
-body .header header .sidebar .main {
-  padding: 21px;
-}
-
-body .header header .sidebar .main ul {
-  margin: -20px 0 0;
-  list-style: none;
-  padding: 0;
-}
-
-body .header header .sidebar .main ul li {
-  padding: 20px 0 0;
-  list-style: none;
-}
-
-body .header header .sidebar .main ul li a {
-  font-size: 18px;
-  padding: 19px 0 18px;
-  border-radius: 3px;
-  outline: 1px solid rgba(0, 0, 0, 0.25);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  color: white;
-  text-align: center;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-
-body .header header .sidebar .main ul li a small {
-  font-size: 10px;
-}
-
-body .header header .sidebar .main ul li ul {
-  margin-top: 20px;
-  border-radius: 3px;
-  overflow: hidden;
-}
-
-body .header header .sidebar .main ul li ul li {
-  padding: 0;
-  margin: 0;
-  border: none;
-  border-top: 1px solid rgba(0, 0, 0, 0.45);
-}
-
-body .header header .sidebar .main ul li ul li:first-child {
-  border-top: none;
-}
-
-body .header header .sidebar .main ul li ul li:first-child a {
-  border-top: none;
-}
-
-body .header header .sidebar .main ul li ul li a {
-  display: block;
-  background-color: rgba(0, 0, 0, 0.25);
-  padding: 10px;
-  font-size: 16px;
-  border: none;
-  border-top: 1px solid rgba(255, 255, 255, 0.05);
-  outline: none;
-}
-
-body .header header .sidebar .main ul li.web span {
-  color: #926fb1;
-}
-
 body .header .main-navigation {
   background-color: #333645;
 }
@@ -1453,6 +1368,168 @@ body .section .service-list .row [class*='col-'] .block .btn-container .btn {
   color: #666;
 }
 
+.sidebar {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 9999;
+  height: 100%;
+  background-color: #333645;
+  width: 275px;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.sidebar .main {
+  padding: 21px;
+}
+
+.sidebar .main ul {
+  margin: -20px 0 0;
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar .main ul li {
+  padding: 20px 0 0;
+  list-style: none;
+}
+
+.sidebar .main ul li a {
+  font-size: 18px;
+  padding: 19px 0 18px;
+  border-radius: 3px;
+  outline: 1px solid rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.sidebar .main ul li a small {
+  font-size: 10px;
+}
+
+.sidebar .main ul li .menu {
+  margin-top: 20px;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.sidebar .main ul li .menu li {
+  padding: 0;
+  margin: 0;
+  border: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.45);
+  border-radius: 0px;
+}
+
+.sidebar .main ul li .menu li a {
+  display: block;
+  background-color: rgba(0, 0, 0, 0.25);
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  outline: none;
+  border-radius: 0px;
+}
+
+.sidebar .main ul li .menu .first {
+  border-top: none;
+}
+
+.sidebar .main ul li.web span {
+  color: #926fb1;
+}
+
+.sidebar .main ul li.it span {
+  color: #4183d7;
+}
+
+.sidebar .main ul li.telecoms span {
+  color: #d64541;
+}
+
+.sidebar .main ul li.software span {
+  color: #67809f;
+}
+
+.sidebar .main ul li.digital span {
+  color: #2eec71;
+}
+
+.sidebar .main ul li.security span {
+  color: #f62459;
+}
+
+.sidebar .sidebar-menu {
+  border-top: 1px solid rgba(0, 0, 0, 0.25);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar .sidebar-menu li {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: rgba(0, 0, 0, 0.25);
+}
+
+.sidebar .sidebar-menu li:hover a {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.sidebar .sidebar-menu li a {
+  display: block;
+  color: white;
+  padding: 20px;
+  text-transform: uppercase;
+  font-size: 16px;
+  text-decoration: none;
+  line-height: 1;
+  position: relative;
+}
+
+.sidebar .sidebar-menu li .menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar .sidebar-menu li .menu li {
+  border-top: 1px solid rgba(0, 0, 0, 0.45);
+}
+
+.sidebar .sidebar-menu li .menu li a {
+  border-top: rgba(255, 255, 255, 0.05);
+  display: block;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.25);
+  padding: 15px 20px;
+  text-transform: uppercase;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.sidebar .sidebar-menu li .menu li a::before {
+  content: "\BB";
+  padding-right: 15px;
+}
+
+.sidebar .sidebar-menu .support {
+  display: none;
+}
+
 @media (max-width: 414px) {
   body .banner {
     height: 567px;
@@ -1539,6 +1616,15 @@ body .section .service-list .row [class*='col-'] .block .btn-container .btn {
   }
   body .brand-background-container .brand-background .container .row [class*='col-'] {
     height: 100%;
+    display: block;
+  }
+  body .sidebar {
+    width: 350px;
+  }
+  body .sidebar .main {
+    display: none;
+  }
+  body .sidebar .sidebar-menu .support {
     display: block;
   }
 }
