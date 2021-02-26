@@ -471,6 +471,14 @@ body .header .main-navigation .container ul li .menu li:nth-child(6) a::after {
   content: "";
 }
 
+body .header .main-navigation .sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 9999;
+  height: 100%;
+}
+
 /*
 $web-primary:#79539a;
 $it-primary:#286abd;
