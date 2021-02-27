@@ -292,6 +292,15 @@ body .header header .inner .container .row .actions-container .actions .btn-hamb
   white-space: normal;
 }
 
+body .header header .inner .container .row .actions-container .actions .btn-hamburger:active {
+  outline: none;
+  border: none;
+}
+
+body .header header .inner .container .row .actions-container .actions .btn-hamburger:focus {
+  outline: 0;
+}
+
 body .header header .inner .container .row .actions-container .actions .btn-hamburger .hamburger-box {
   display: block;
   position: relative;

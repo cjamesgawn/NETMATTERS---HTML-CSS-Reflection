@@ -115,6 +115,13 @@ body {
                                     text-transform: uppercase;
                                     border-radius: 3px;
                                     white-space: normal;
+                                    &:active {
+                                        outline: none;
+                                        border: none;
+                                    }
+                                    &:focus {
+                                        outline: 0;
+                                    }
                                     .hamburger-box {
                                         display: block;
                                         position: relative;
