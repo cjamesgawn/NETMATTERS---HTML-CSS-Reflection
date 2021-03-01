@@ -164,6 +164,7 @@ $security-primary:#de093f;
 
 body .header header {
   display: block;
+  background-color: white;
 }
 
 body .header header .inner {
@@ -994,6 +995,42 @@ $security-primary:#de093f;
   background-color: #fff;
 }
 
+.main {
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  z-index: 1;
+  position: relative;
+  overflow: auto;
+  background-color: white;
+}
+
+.main .overlay {
+  position: relative;
+  z-index: 1;
+}
+
+.main:after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 10;
+  content: "";
+  opacity: 0;
+  -webkit-transition: opacity .5s,width .1s .5s,height .1s .5s;
+  transition: opacity .5s,width .1s .5s,height .1s .5s;
+}
+
+body.menu-active .main:after {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  -webkit-transition: opacity .5s;
+  transition: opacity .5s;
+}
+
 body .banner {
   border-top: 1px solid rgba(51, 54, 69, 0.5);
   position: relative;
@@ -1013,7 +1050,7 @@ body .banner .content-container {
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 1;
+  z-index: 2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1285,7 +1322,7 @@ body .section .service-list .row [class*='col-'] .block .btn-container .btn {
   padding: 0 10px;
   line-height: 23px;
   text-transform: uppercase;
-  z-index: 1;
+  z-index: 2;
   font-weight: 600;
 }
 
@@ -1378,16 +1415,20 @@ body .section .service-list .row [class*='col-'] .block .btn-container .btn {
 }
 
 .sidebar {
-  display: none;
+  display: block;
   position: fixed;
   top: 0;
   right: 0;
-  z-index: 9999;
+  -webkit-transform: translateX(135%);
+          transform: translateX(135%);
   height: 100%;
   background-color: #333645;
   width: 275px;
   overflow: auto;
   -webkit-overflow-scrolling: touch;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  z-index: 9999;
 }
 
 .sidebar .main {

@@ -4,9 +4,53 @@
 // Import Mixins
 @import '_mixins.scss';
 
+.main {
+    transition: all .5s;
+    z-index: 1;
+    position: relative;
+    overflow: auto;
+    background-color: white;
+    .overlay {
+        position: relative;
+        //background-color: rgba(0,0,0,.5);
+        z-index: 1;
+    }
 
+    &:after {
+
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 0;
+        height: 0;
+        background: rgba(0,0,0,.4);
+        z-index: 10;
+        content: "";
+        opacity: 0;
+        transition: opacity .5s,width .1s .5s,height .1s .5s;
+
+    }
+}
 
 body {
+
+    &.menu-active {
+
+        .main {
+
+            &:after {
+
+                width: 100%;
+                height: 100%;
+                opacity: 1;
+                transition: opacity .5s;
+
+            }
+
+        }
+
+    }
+    
     .banner {
         border-top:1px solid rgba(51,54,69,.5);
         position: relative;
@@ -23,7 +67,7 @@ body {
             right: 0;
             bottom: 0;
             left: 0;
-            z-index: 1;
+            z-index: 2;
             display: flex;
             justify-content: center;
             align-content: center;
@@ -156,105 +200,6 @@ body {
             }
         }
     }
-
-
-    // .block-container {
-    //     margin-right: auto;
-    //     margin-left: auto;
-    //     padding-left: 15px;
-    //     padding-right: 15px;
-    //     padding-bottom: 50px;
-      
-    //     .row {
-    //         justify-content: center;
-    //         display: flex; 
-    //         flex-wrap: wrap;
-    //         [class*="col-"] {
-    //             //margin-bottom: -99999px;
-    //             //padding-bottom: 99999px;
-    //             margin-bottom:30px;
-    //             .block-link {
-    //                 // display: block;
-    //                 // width: 100%;
-                    
-    //             }
-    //             .block {
-    //             display: block;
-    //             border: 1px solid #ccc;
-    //             width: auto;
-    //             height: 100%;
-    //             padding: 30px;
-    //             padding-bottom: 0px;
-    //             margin: 30px auto 0 0;
-    //             text-align: center;
-    //             border-radius: 3px;
-    //             box-shadow: 0 3px 35px rgba(0,0,0,.1);
-                
-    //             // &_link {
-    //             //     display: inline;
-    //             //     position: relative;
-    //             //     left: 0;
-    //             //     right: 0;
-    //             //     width: 100%;
-    //             //     height: 100%;
-    //             //     z-index: 1;
-                
-    //             }
-    //             .burger_line {
-    //                 display: block;
-    //                 height: 3px;
-    //                 width: 28px;
-    //                 background-color: black;
-    //                 margin: 15px auto 10px;
-                    
-    //             }
-    //             .icon-circle {
-                    
-    //                 width: 60px;
-    //                 height: 60px;
-    //                 margin: 0 auto 17px auto;
-    //                 border-radius: 50%;
-    //                 background-color:  #67809f;
-    //                 line-height: 60px;
-    //                 i {
-    //                     font-size: 16px;
-    //                     color: white;
-                        
-    //                 }
-    //             }
-    //             .btn-container {
-    //                 .btn {
-                        
-    //                     height: auto;
-    //                     line-height: 35px;
-    //                     padding: 5px 15px;
-    //                     font-size: 17px;
-    //                     border-radius: 3px;
-    //                 }
-    //                 a {
-    //                     transition: 0s;
-    //                 }
-    //             }
-    //             p {
-    //                 font-size: 13px; 
-    //                 font-weight: 400;
-    //                 letter-spacing: .4px;
-    //                 line-height: 22px;
-                    
-    //              }
-    //             .block-h2 {
-    //                 h2 {
-    //                     font-size: 18px;
-    //                     font-weight: 400;
-    //                 }
-                    
-    //             }
-                
-    //         }
-    //         }
-            
-            
-    //     }
     }
 
     .brand-background-container {
@@ -372,7 +317,7 @@ body {
                                     padding: 0 10px;
                                     line-height: 23px;
                                     text-transform: uppercase;
-                                    z-index: 1;
+                                    z-index: 2;
                                     font-weight: 600;
                                 }
                                 .img {
@@ -462,16 +407,19 @@ body {
     }
 }
 .sidebar {
-    display: none;
+    display: block;
     position: fixed;
     top: 0;
     right: 0;
-    z-index: 9999;
+    transform:translateX(135%);
+    //z-index: 9999;
     height: 100%;
     background-color:#333645;
-    width: 275px;
+    width:275px;
     overflow: auto;
     -webkit-overflow-scrolling: touch;
+    transition: all .3s;
+    z-index: 9999;
     .main {
         padding: 21px;
         ul {
