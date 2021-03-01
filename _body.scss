@@ -6,7 +6,7 @@
 
 .main {
     transition: all .5s;
-    z-index: 1;
+    z-index: 9999999;
     position: relative;
     overflow: auto;
     background-color: white;
@@ -411,16 +411,16 @@ body {
     position: fixed;
     top: 0;
     right: 0;
-    transform:translateX(135%);
+    //transform:translateX(135%);
     //z-index: 9999;
     height: 100%;
     background-color:#333645;
     width:275px;
     overflow: auto;
     -webkit-overflow-scrolling: touch;
-    transition: all .3s;
+    transition: all 0s;
     z-index: 9999;
-    .main {
+    .sidebar-main {
         padding: 21px;
         ul {
             margin: -20px 0 0;

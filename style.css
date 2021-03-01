@@ -998,7 +998,7 @@ $security-primary:#de093f;
 .main {
   -webkit-transition: all .5s;
   transition: all .5s;
-  z-index: 1;
+  z-index: 9999999;
   position: relative;
   overflow: auto;
   background-color: white;
@@ -1419,34 +1419,32 @@ body .section .service-list .row [class*='col-'] .block .btn-container .btn {
   position: fixed;
   top: 0;
   right: 0;
-  -webkit-transform: translateX(135%);
-          transform: translateX(135%);
   height: 100%;
   background-color: #333645;
   width: 275px;
   overflow: auto;
   -webkit-overflow-scrolling: touch;
-  -webkit-transition: all .3s;
-  transition: all .3s;
+  -webkit-transition: all 0s;
+  transition: all 0s;
   z-index: 9999;
 }
 
-.sidebar .main {
+.sidebar .sidebar-main {
   padding: 21px;
 }
 
-.sidebar .main ul {
+.sidebar .sidebar-main ul {
   margin: -20px 0 0;
   list-style: none;
   padding: 0;
 }
 
-.sidebar .main ul li {
+.sidebar .sidebar-main ul li {
   padding: 20px 0 0;
   list-style: none;
 }
 
-.sidebar .main ul li a {
+.sidebar .sidebar-main ul li a {
   font-size: 18px;
   padding: 19px 0 18px;
   border-radius: 3px;
@@ -1465,17 +1463,17 @@ body .section .service-list .row [class*='col-'] .block .btn-container .btn {
   text-decoration: none;
 }
 
-.sidebar .main ul li a small {
+.sidebar .sidebar-main ul li a small {
   font-size: 10px;
 }
 
-.sidebar .main ul li .menu {
+.sidebar .sidebar-main ul li .menu {
   margin-top: 20px;
   border-radius: 3px;
   overflow: hidden;
 }
 
-.sidebar .main ul li .menu li {
+.sidebar .sidebar-main ul li .menu li {
   padding: 0;
   margin: 0;
   border: none;
@@ -1483,7 +1481,7 @@ body .section .service-list .row [class*='col-'] .block .btn-container .btn {
   border-radius: 0px;
 }
 
-.sidebar .main ul li .menu li a {
+.sidebar .sidebar-main ul li .menu li a {
   display: block;
   background-color: rgba(0, 0, 0, 0.25);
   padding: 10px;
@@ -1494,31 +1492,31 @@ body .section .service-list .row [class*='col-'] .block .btn-container .btn {
   border-radius: 0px;
 }
 
-.sidebar .main ul li .menu .first {
+.sidebar .sidebar-main ul li .menu .first {
   border-top: none;
 }
 
-.sidebar .main ul li.web span {
+.sidebar .sidebar-main ul li.web span {
   color: #926fb1;
 }
 
-.sidebar .main ul li.it span {
+.sidebar .sidebar-main ul li.it span {
   color: #4183d7;
 }
 
-.sidebar .main ul li.telecoms span {
+.sidebar .sidebar-main ul li.telecoms span {
   color: #d64541;
 }
 
-.sidebar .main ul li.software span {
+.sidebar .sidebar-main ul li.software span {
   color: #67809f;
 }
 
-.sidebar .main ul li.digital span {
+.sidebar .sidebar-main ul li.digital span {
   color: #2eec71;
 }
 
-.sidebar .main ul li.security span {
+.sidebar .sidebar-main ul li.security span {
   color: #f62459;
 }
 
@@ -1671,7 +1669,7 @@ body .section .service-list .row [class*='col-'] .block .btn-container .btn {
   body .sidebar {
     width: 350px;
   }
-  body .sidebar .main {
+  body .sidebar .sidebar-main {
     display: none;
   }
   body .sidebar .sidebar-menu .support {
