@@ -127,43 +127,43 @@ body {
                                         top: -3px;
                                         width: 33px;
                                         height: 19px;
-                                        .hamburger-inner {
-                                            background-color: #fff;
-                                            border-radius: 0;
-                                            width: 33px;
-                                            height: 3px;
-                                            display: block;
-                                            position:absolute;
-                                            top: 50%;
-                                            margin-top: -1.5px;
-                                            &::before {
-                                                background-color: #fff;
-                                                border-radius: 0;
-                                                top: -8px;
-                                                content: "";
-                                                display: block;
-                                                width: 33px;
-                                                height: 3px;
-                                                position: absolute;
-                                            }
-                                            &::after {
-                                                background-color: #fff;
-                                                border-radius: 0;
-                                                bottom: -8px;
-                                                content: "";
-                                                display: block;
-                                                width: 33px;
-                                                height: 3px;
-                                                position: absolute;
-                                            }
-                                        }
+                                        // .hamburger-inner {
+                                        //     background-color: #fff;
+                                        //     border-radius: 0;
+                                        //     width: 33px;
+                                        //     height: 3px;
+                                        //     display: block;
+                                        //     position:absolute;
+                                        //     top: 50%;
+                                        //     margin-top: -1.5px;
+                                        //     &::before {
+                                        //         background-color: #fff;
+                                        //         border-radius: 0;
+                                        //         top: -8px;
+                                        //         content: "";
+                                        //         display: block;
+                                        //         width: 33px;
+                                        //         height: 3px;
+                                        //         position: absolute;
+                                        //     }
+                                        //     &::after {
+                                        //         background-color: #fff;
+                                        //         border-radius: 0;
+                                        //         bottom: -8px;
+                                        //         content: "";
+                                        //         display: block;
+                                        //         width: 33px;
+                                        //         height: 3px;
+                                        //         position: absolute;
+                                        //     }
+                                        // }
                                     }
                                     .title {
                                         display: block;
                                         font-size: 12px;
                                         line-height: 1;
                                         position: relative;
-                                        top: 5px;
+                                        top: 0px;
                                     }
                                 }
                             }

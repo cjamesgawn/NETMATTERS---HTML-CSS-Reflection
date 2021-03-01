@@ -171,7 +171,13 @@
 }
 
 @media (max-width:800px) {
-    
+    body .header header .inner .container .row {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        .logo-box {
+            width: 50%;
+        }
+    }
 }
 
 @media (max-width:768px) {

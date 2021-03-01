@@ -34,16 +34,57 @@
     .banner {
         border-top:1px solid rgba(51,54,69,.5);
         position: relative;
-        height: 760px;
+        height: 83.5vh;
         .slider {
             height: 100%;
             .item {
                 position: relative;
                 &__one {
                     overflow: hidden;
-                    background:url('/Assets/home-3wAI.jpg') no-repeat;
+                    background-image: linear-gradient(to left,rgba(0, 0, 0, 0), rgb(13, 13, 14)), url('Assets/home-3wAI.jpg');
                     background-size:cover;
                     background-position:center center;
+                    background-repeat: no-repeat;
+                    height: 100%;
+                }
+                &__two {
+                    overflow: hidden;
+                    background-image: linear-gradient(to left,rgba(0, 0, 0, 0), rgb(13, 13, 14)), url('Assets/home-57sJ.jpg');
+                    background-size:cover;
+                    background-position:center center;
+                    background-repeat: no-repeat;
+                    height: 100%;
+                }
+                &__three {
+                    overflow: hidden;
+                    background-image: linear-gradient(to left,rgba(0, 0, 0, 0), rgb(13, 13, 14)), url('Assets/home-5yqm.jpg');
+                    background-size:cover;
+                    background-position:center center;
+                    background-repeat: no-repeat;
+                    height: 100%;
+                }
+                &__four {
+                    overflow: hidden;
+                    background-image: linear-gradient(to left,rgba(0, 0, 0, 0), rgb(13, 13, 14)), url('Assets/home-sqvx.jpg');
+                    background-size:cover;
+                    background-position:center center;
+                    background-repeat: no-repeat;
+                    height: 100%;
+                }
+                &__five {
+                    overflow: hidden;
+                    background-image: linear-gradient(to left,rgba(0, 0, 0, 0), rgb(13, 13, 14)), url('Assets/home-JQsO.jpg');
+                    background-size:cover;
+                    background-position:center center;
+                    background-repeat: no-repeat;
+                    height: 100%;
+                }
+                &__six {
+                    overflow: hidden;
+                    background-image: linear-gradient(to left,rgba(0, 0, 0, 0), rgb(13, 13, 14)), url('Assets/home-lQs1.jpg');
+                    background-size:cover;
+                    background-position:center center;
+                    background-repeat: no-repeat;
                     height: 100%;
                 }
                 .content-container {
@@ -79,10 +120,10 @@
                             p {
                                 font-size: 20px;
                                 margin: 0 0 35px;
+                                line-height: 2.25rem;
                             }
-                            .btn-web {
+                            .btn{
                                 color: #fff;
-                                background-color: #926fb1;
                                 line-height: 50px;
                                 height: auto;
                                 padding: 5px 15px;
@@ -94,8 +135,30 @@
                                 margin-bottom: 0;
                                 text-align: center;
                                 vertical-align: middle;
-                                &:hover {
-                                    background-color: #79539a;
+                                
+                                // &-web {
+                                //     background-color: #926fb1;
+                                //     &:hover {
+                                //         background-color: #79539a;
+                                //     }
+                                // }
+                                // &-it {
+                                //     background-color: #4183d7;
+                                //     &:hover {
+                                //         background-color: #286abd;
+                                //     }
+                                // }
+                                // &-telecoms {
+                                //     background-color: ;
+                                // }
+                            }
+                            @each $name, $normal_colour, $hover_colour
+                            in $colours {
+                                .btn-#{$name} {
+                                    background-color: $normal_colour;
+                                    &:hover {
+                                        background-color: $hover_colour;
+                                    }
                                 }
                             }
                         }
@@ -113,7 +176,7 @@
         .slider-container {
             position: absolute;
             width: 100%;
-            bottom: 40px;
+            bottom: 80px;
             .slider-controls {
                 display: flex;
                 justify-content: center;
@@ -126,11 +189,18 @@
                     text-align: center;
                     padding: 0;
                     width: 100%;
+                    .slick-active {
+                        border-radius: 50%;
+                        border: 2px solid white;
+                        button {
+                            background-color: white;
+                        }
+                    }
                     li {
                         position: relative;
                         display: inline-block;
-                        height: 20px;
-                        width: 20px;
+                        height: 23px;
+                        width: 23px;
                         margin: 0 5px;
                         padding: 0;
                         cursor: pointer;
@@ -138,13 +208,14 @@
                             border: 0;
                             //background: transparent;
                             display: block;
-                            height: 20px;
-                            width: 20px;
+                            height: 11px;
+                            width: 11px;
                             outline: none;
                             line-height: 0px;
                             font-size: 0px;
                             color: transparent;
                             padding: 5px;
+                            margin: 4px;
                             border-radius: 50%;
                             cursor: pointer;
                             &:hover, &:focus {
@@ -176,40 +247,7 @@
                         }
                     }
                 }
-                // .slick-dots {
-                //     display: flex;
-                //     justify-content: space-between;
-                //     flex-direction: row;
-                //     li {
-                //         list-style: none;
-                //         margin-left: 10px;
-                //         width: 24px;
-                //         height: 24px;
-                //         border-radius: 50%;
-                //         background-color: transparent;
-                //         border: none;
-                //         button {
-                //             color: transparent;
-                //             max-width: 12px;
-                //             height: 12px;
-                //             //font-size: 0;
-                //             margin: 4px;
-                //             border-radius: 50%;
-                //             border: none;
-                //             background-color:#ffffff80;
-                            
-                //         }
-                //     }
-                //     .slick-active {
-                //         border: 2px solid white;
-
-                //     }
-                //     li:not(:last-child) {
-                //         margin-right: 10px;
-                //     }
-                // }
-            }
-            
+            }   
         }
     }
 }
