@@ -1,12 +1,6 @@
 @media (max-width:414px) {
 
     body {
-        .banner {
-            height: 567px;
-            .background-img {
-                height: 100%;
-            }
-        }
     }
 }
 
@@ -14,28 +8,6 @@
 
 @media (min-width:576px) {
     body {
-        .banner {
-            height: 704px;
-            .background-img {
-                height: 100%;
-            }
-            .content-container {
-                .container {
-                    
-                    .text {
-                        .h1 {
-
-                        }
-                        p {
-
-                        }
-                        .btn-web {
-                            
-                        }
-                    }
-                }
-            }
-        }
         .section {
             max-width: 750px;
             .service-list {
@@ -55,30 +27,6 @@
 @media (min-width:768px) {
 
     body {
-        .banner {
-            height: 762px;
-            .background-img {
-                height: 100%;
-            }
-            .content-container {
-                .container {
-                    width: 750px;
-                    max-width: 750px;
-                    
-                    .text {
-                        .h1 {
-
-                        }
-                        p {
-
-                        }
-                        .btn-web {
-                            
-                        }
-                    }
-                }
-            }
-        }
         .section {
             max-width: 750px;
             .service-list {
@@ -127,32 +75,6 @@
 @media (min-width:992px) {
 
     body {
-        .banner {
-            height: 600px;
-            .background-img {
-                height: 100%;
-            }
-            .content-container {
-                text-align: left;
-                .container {
-                    width: 970px;
-                    max-width: 970px;
-                    margin: 0 23px;
-                    padding: 0 15px;
-                    .text {
-                        .h1 {
-
-                        }
-                        p {
-
-                        }
-                        .btn-web {
-                            
-                        }
-                    }
-                }
-            }
-        }
         .section {
             max-width: 970px;
             .service-list {
@@ -207,29 +129,6 @@
 @media (min-width:1260px) {
 
     body {
-        .banner {
-            height: 737px;
-            .background-img {
-                height: 100%;
-            }
-            .content-container {
-                .container {
-                    width: 1200px;
-                    max-width: 1200px;
-                    .text {
-                        .h1 {
-
-                        }
-                        p {
-
-                        }
-                        .btn-web {
-
-                        }
-                    }
-                }
-            }
-        }
         .section {
             max-width:1200px;
             .service-list {
