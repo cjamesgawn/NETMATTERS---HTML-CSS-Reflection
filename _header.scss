@@ -1,5 +1,18 @@
+.sticky + #content {
+    padding-top: 209px;
+}
+
 body {
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        //padding-top:400px;
+        z-index: 9999;
+        
+    }
     .header {
+        z-index: 9;
         header {
             display: block;
             background-color: white;
