@@ -1,3 +1,9 @@
+@media (max-width:768px) {
+    .footer-links .container .row .social {
+        padding-top: 30px;
+    }
+}
+
 @media (min-width:768px) {
 
 footer {
@@ -196,7 +202,7 @@ footer {
             height: 170px;
             .container {
                 margin: 0 auto;
-                padding: 0;
+                //padding: 0;
             }
         }
     }

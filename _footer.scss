@@ -11,13 +11,23 @@
         padding:0 15px;
         .row {
             margin: 0 -15px;
+            .contact {
+                padding-bottom: 30px!important;
+            }     
+            .about {
+                padding-bottom: 30px!important;
+            }
+            .social {
+                h4 {
+                    margin: 0!important;
+                }
+            }
             [class*="col-"] {
-                line-height: 22px;
-                
+                line-height: 22px;                
                 h4 {
                     text-transform: uppercase;
                     font-size:16px;
-                    //margin-bottom: 26px;
+                    margin-bottom: 26px;
                     font-weight:400;
                 }
                 ul {
@@ -63,14 +73,26 @@
                     }
                 }
             }
+            
             .website {
-                margin-bottom: 0;
+                //margin-bottom: 0;
             }
         }
     }
 }
 .accreditations {
     display: none;
+    .container {
+        .list {
+            .item {
+                max-width: 240px;
+                max-height: 82px;
+                img {
+                    height: 100%
+                }
+            }
+        }
+    }
 }
 
 @import 'footer_medias';
