@@ -76,9 +76,15 @@ body {
                                 .btn_support {
                                     background-color: #4183d7;
                                     display: none;
+                                    &:hover {
+                                        background-color: #2a6ec6;
+                                    }
                                 }
                                 .btn_contact {
                                     background-color: #999aa2;
+                                    &:hover {
+                                        background-color: #84858f;
+                                    }
                                 }
 
                                 .search-form-wrapper--tablet {
@@ -87,13 +93,18 @@ body {
                                     .search-form {
                                         .form_search-bar {
                                             display: inline-block;
-                                            border-radius: 0;
+                                            //border-radius: 0;
                                             width:240px;
                                             height: 56px;
                                             padding: 5px 15px;
                                             border-color: #ccc;
                                             border: 1px solid #e5e5e5;
                                             box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+                                            &:focus {
+                                                border-color: #5bc0de;
+                                                outline: 0;
+                                                box-shadow: 0 0 8px rgba(91, 192, 222, 60%);
+                                            }
                                         }
                                         .form_search-submit {
                                             display: inline-block;
@@ -109,6 +120,9 @@ body {
                                             background-color: #999aa2;
                                             color: #fff;
                                             margin-left: -4px;
+                                            &:hover {
+                                                background-color: #7e808a;
+                                            }
                                             .form_search-submit-icon {
                                                 font-size: 23px;
                                             }
@@ -133,6 +147,9 @@ body {
                                     }
                                     &:focus {
                                         outline: 0;
+                                    }
+                                    &:hover {
+                                        background-color: #22242e;
                                     }
                                     .hamburger-box {
                                         display: block;
@@ -252,6 +269,7 @@ body {
                                 position: absolute;
                                 top: 0;
                                 bottom: 0;
+                                overflow: hidden;
                             }
                             &::after {
                                 background-color: #79539a;
@@ -262,6 +280,7 @@ body {
                                 position: absolute;
                                 top: 0;
                                 bottom: 0;
+                                overflow: hidden;
                             }
                             a {
                                 padding: 15px 0 14px;

@@ -260,8 +260,16 @@ body .header header .inner .container .row .actions-container .actions .btn_supp
   display: none;
 }
 
+body .header header .inner .container .row .actions-container .actions .btn_support:hover {
+  background-color: #2a6ec6;
+}
+
 body .header header .inner .container .row .actions-container .actions .btn_contact {
   background-color: #999aa2;
+}
+
+body .header header .inner .container .row .actions-container .actions .btn_contact:hover {
+  background-color: #84858f;
 }
 
 body .header header .inner .container .row .actions-container .actions .search-form-wrapper--tablet {
@@ -271,7 +279,6 @@ body .header header .inner .container .row .actions-container .actions .search-f
 
 body .header header .inner .container .row .actions-container .actions .search-form-wrapper--tablet .search-form .form_search-bar {
   display: inline-block;
-  border-radius: 0;
   width: 240px;
   height: 56px;
   padding: 5px 15px;
@@ -279,6 +286,13 @@ body .header header .inner .container .row .actions-container .actions .search-f
   border: 1px solid #e5e5e5;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
           box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+body .header header .inner .container .row .actions-container .actions .search-form-wrapper--tablet .search-form .form_search-bar:focus {
+  border-color: #5bc0de;
+  outline: 0;
+  -webkit-box-shadow: 0 0 8px #5bc0de;
+          box-shadow: 0 0 8px #5bc0de;
 }
 
 body .header header .inner .container .row .actions-container .actions .search-form-wrapper--tablet .search-form .form_search-submit {
@@ -295,6 +309,10 @@ body .header header .inner .container .row .actions-container .actions .search-f
   background-color: #999aa2;
   color: #fff;
   margin-left: -4px;
+}
+
+body .header header .inner .container .row .actions-container .actions .search-form-wrapper--tablet .search-form .form_search-submit:hover {
+  background-color: #7e808a;
 }
 
 body .header header .inner .container .row .actions-container .actions .search-form-wrapper--tablet .search-form .form_search-submit .form_search-submit-icon {
@@ -321,6 +339,10 @@ body .header header .inner .container .row .actions-container .actions .btn-hamb
 
 body .header header .inner .container .row .actions-container .actions .btn-hamburger:focus {
   outline: 0;
+}
+
+body .header header .inner .container .row .actions-container .actions .btn-hamburger:hover {
+  background-color: #22242e;
 }
 
 body .header header .inner .container .row .actions-container .actions .btn-hamburger .hamburger-box {
@@ -425,6 +447,7 @@ body .header .main-navigation .container ul li .menu::before {
   position: absolute;
   top: 0;
   bottom: 0;
+  overflow: hidden;
 }
 
 body .header .main-navigation .container ul li .menu::after {
@@ -436,6 +459,7 @@ body .header .main-navigation .container ul li .menu::after {
   position: absolute;
   top: 0;
   bottom: 0;
+  overflow: hidden;
 }
 
 body .header .main-navigation .container ul li .menu a {
@@ -1618,6 +1642,10 @@ body .section .service-list .row [class*='col-'] .block .btn-container .btn {
   min-height: 391px;
 }
 
+.latest-articles .section .container .article-list .row [class*="col-"] .item .block h3 {
+  min-height: 66px;
+}
+
 .latest-articles .section .container .article-list .row [class*="col-"] .item .block h3 a {
   font-size: 16px;
   line-height: 24px;
@@ -2507,7 +2535,6 @@ $security-primary:#de093f;
 .footer-links .container .row [class*="col-"] h4 {
   text-transform: uppercase;
   font-size: 16px;
-  margin-bottom: 26px;
   font-weight: 400;
 }
 
